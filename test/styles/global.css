@@ -1,0 +1,38 @@
+ul.services{
+	width: 800px;
+	margin: 0px auto;
+	padding: 0;
+	list-style: none;
+}
+
+	ul.services li{
+		width: 200px;
+		float: left;
+		transition: all 0.3s ease-in-out;
+	}
+
+	ul.services li:hover{
+		color: #2980b9;
+	}
+
+		ul.services li i{
+			display: block;
+			text-align: center;
+			font-size: 40px;
+			margin-bottom: 20px;
+			height: 60px;
+			transition: all 0.3s ease-in-out;
+			padding-top: 10px;
+			box-sizing: border-box;
+		}
+
+		ul.services li:hover i{
+			font-size: 80px;
+			padding-top: 0px;
+		}
+
+		ul.services li span{
+			display: block;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+		}
