@@ -1,0 +1,43 @@
+ul.nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+	ul.nav li {
+		float: left;
+		background-color: gray;
+		color: white;
+		padding: 10px;
+		position: relative;
+	}
+
+	ul.nav > li {
+		width: 100px;
+	}
+
+	ul.nav li:hover {
+		background-color: silver;
+	}
+
+	ul.nav li ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: block;
+		position: absolute;
+		left: 0px;
+		top: 38px;
+		opacity: 0;
+		transition: all .5s ease-in-out;
+	}
+
+	ul.nav li:hover ul {
+		/*display: block;*/
+		opacity: 1;
+	}
+
+	ul.nav li ul li {
+		float: none;
+	}
+
