@@ -1,0 +1,19 @@
+.input {
+	width: 150px;
+	/*border: 1px solid black;*/
+	padding: 5px;
+	background: gray;
+	border-radius: 3px;
+}
+	.input i {
+		width: 20px;
+		color: #fff;
+	}
+
+	.input input {
+		width: 120px;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		color: white;
+	}
