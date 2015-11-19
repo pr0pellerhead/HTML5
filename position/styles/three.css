@@ -17,3 +17,17 @@
 		background-color: transparent;
 		color: white;
 	}
+
+
+/**************/
+
+.input2 {
+	background-image: url(../assets/images/user_icon.png);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+span.cleaner {
+	display: block;
+	clear: both;
+}
