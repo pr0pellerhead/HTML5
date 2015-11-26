@@ -1,0 +1,5 @@
+section.main-section > div { 
+	float: none;
+	width: 90%;	
+	height: 40%;
+}
