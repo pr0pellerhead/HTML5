@@ -5,6 +5,11 @@
 	font-family: sans-serif;
 }
 
+span.cleaner {
+	display: block;
+	clear: both;
+}
+
 html, body {
 	height: 100%;
 }
@@ -76,4 +81,54 @@ section {
 		width: 200px;
 		margin: 20px auto;
 		text-align: center;
+	}
+
+.about .section-container {
+	text-align: center;
+}
+	.about .section-container > div {
+		width: 300px;
+		height: 300px;
+		border: 1px solid gray;
+		background-color: silver;
+		display: inline-block;
+		margin: 0 30px;
+	}
+
+.clients p {
+	margin: 20px 0;
+}
+
+.gallery .section-container {
+	text-align: center;
+}
+
+	.gallery img {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		margin: 30px;
+	}
+
+.site-footer {
+	width: 100%;
+	height: 200px;
+	background-color: silver;
+	box-sizing: border-box;
+	padding-top: 30px;
+}
+
+	.site-footer .left {
+		float: left;
+		margin-left: 15%;
+		width: 300px;
+	}
+
+		.site-footer .left h3 {
+			margin-bottom: 20px;
+		}
+
+	.site-footer .right {
+		float: right;
+		margin-right: 15%;
 	}
