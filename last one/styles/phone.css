@@ -1,0 +1,46 @@
+.site-header h1 {
+	margin: 18px 0 0 20px;
+	font-size: 22px;
+}
+
+.site-header nav {
+	display: none;
+}
+
+.splash h2 {
+	margin: 0;
+	padding: 270px 20px 0 20px;
+	font-size: 45px;
+}
+
+.about .section-container > div {
+	width: 100%;
+	min-height: 200px;
+	border: 1px solid gray;
+	background-color: silver;
+	margin: 20px auto;
+}
+
+.gallery img {
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	margin: auto;
+}
+
+.site-footer {
+	height: auto;
+	padding-bottom: 30px;
+}
+
+.site-footer .left {
+	float: none;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.site-footer .right {
+	float: none;
+	width: 90%;
+	margin: 20px auto 0 auto;
+}
