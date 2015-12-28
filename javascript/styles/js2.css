@@ -1,3 +1,37 @@
-.images img {
-	display: none;
+span.cleaner {
+	display: block;
+	clear: both;
 }
+
+.gallery {
+	width: 500px;
+	box-sizing: border-box;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid gray;
+}
+
+	.gallery .images {
+		width: 100%;
+	}
+
+		.gallery .images img {
+			width: 100%;
+			display: none;
+		}
+
+	.gallery .gradovi {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+	}
+
+		.gallery .gradovi li {
+			float: left;
+			width: calc(100% / 5);
+			overflow: hidden;
+		}
+
+			.gallery .gradovi li img {
+				width: 100%;
+			}

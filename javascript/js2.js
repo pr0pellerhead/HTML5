@@ -1,18 +1,18 @@
-var btn1 = document.querySelector('.btn1');
-// console.log(btn1);
-btn1.style.fontSize = '50px';
-btn1.style.fontWeight = 'bold';
+// var btn1 = document.querySelector('.btn1');
+// // console.log(btn1);
+// btn1.style.fontSize = '50px';
+// btn1.style.fontWeight = 'bold';
 
-var label1 = document.querySelector('.label1');
-// console.log(label1);
+// var label1 = document.querySelector('.label1');
+// // console.log(label1);
 
-label1.addEventListener('click', function(){
-	alert('Klik!');
-});
+// label1.addEventListener('click', function(){
+// 	alert('Klik!');
+// });
 
-btn1.addEventListener('click', function(){
-	label1.style.fontSize = '100px';
-});
+// btn1.addEventListener('click', function(){
+// 	label1.style.fontSize = '100px';
+// });
 
 
 /*********************************/
@@ -20,8 +20,8 @@ btn1.addEventListener('click', function(){
 // .gradovi li
 
 var gradovi = document.querySelectorAll('.gradovi li');
-console.log(gradovi);
-console.log(gradovi.length);
+// console.log(gradovi);
+// console.log(gradovi.length);
 
 for(var i = 0; i < gradovi.length; i = i + 1){
 	// console.log('grad!');
@@ -40,3 +40,12 @@ for(var i = 0; i < gradovi.length; i = i + 1){
 
 	});
 }
+
+
+/*
+
+a++
+a = + 1
+a = a + 1
+
+*/
