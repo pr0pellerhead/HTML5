@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			ul {
+				list-style: none;
+				width: 250px;
+				margin: 0;
+				padding: 0;
+				color: white;
+				background-color: black;
+
+			}
+
+			ul ul {
+				color: black;
+				background-color: silver;
+				display: none;
+				margin-left: -10px;
+			}
+
+			li {
+				box-sizing: border-box;
+				padding: 10px 0 10px 10px;
+				cursor: pointer;
+				font-family: sans-serif;
+				text-transform: uppercase;
+			}
+
+			li li {
+				box-sizing: border-box;
+				padding: 10px
+			}
+
+			.vo-boja {
+				background: pink;
+				color: white;
+				font-size: 40px;
+				transition: all .3s ease-in-out;
+			}
+
+		</style>
+	</head>
+	<body>
+		<ul class="menu">
+			<li>Item 1
+				<ul>
+					<li>Item 1-1</li>
+					<li>Item 1-2</li>
+					<li>Item 1-3</li>
+					<li>Item 1-4</li>
+				</ul>
+			</li>
+			<li>Item 2
+				<ul>
+					<li>Item 2-1</li>
+					<li>Item 2-2</li>
+					<li>Item 2-3</li>
+					<li>Item 2-4</li>
+				</ul>
+			</li>
+			<li>Item 3
+				<ul>
+					<li>Item 3-1</li>
+					<li>Item 3-2</li>
+					<li>Item 3-3</li>
+					<li>Item 3-4</li>
+				</ul>
+			</li>
+			<li>Item 4
+				<ul>
+					<li>Item 4-1</li>
+					<li>Item 4-2</li>
+					<li>Item 4-3</li>
+					<li>Item 4-4</li>
+				</ul>
+			</li>
+		</ul>
+
+		<!-- ('ul#' + id + 'li') -->
+
+		<button>Click Me!</button>
+		<span>Text</span>
+		<a href="js4.html">JS4</a>
+		<script>
+			var list_items = document.querySelectorAll('.menu > li');
+
+			for(var i = 0; i < list_items.length; i++){
+				list_items[i].addEventListener('click', function(){
+					if (this.querySelector('ul').style.display == 'block'){
+						this.querySelector('ul').style.display = 'none';
+					} else {
+						this.querySelector('ul').style.display = 'block';
+					}
+				});
+			}
+
+			var li = document.querySelectorAll('li li');
+
+			for(var a = 0; a < li.length; a++){
+				li[a].addEventListener('click', function(e){
+					e.stopPropagation();
+				});
+			}
+
+			document.querySelector('button').addEventListener('click', function(){
+				document.querySelector('span').classList.toggle('vo-boja');
+			});
+
+
+
+		</script>
+	</body>
+</html>

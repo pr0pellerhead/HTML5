@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			.red {
+				background: red;
+				color: white;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script>
+
+			$(document).ready(function(){
+
+				$('.btn1').on('click', function(){
+					// $(this).toggleClass('red');
+					// $('.btn1:first-child').addClass('red');
+					
+					$(this).css({
+						'background': 'red', 
+						'color': 'white'
+					});
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<button class="btn1">Click Me!</button>
+		<button class="btn1">Click Me!</button>
+	</body>
+</html>
