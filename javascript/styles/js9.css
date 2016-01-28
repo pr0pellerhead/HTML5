@@ -1,0 +1,41 @@
+.wrap {
+	border: 1px solid black;
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+}
+
+	.wrap ul {
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		height: 200px;
+		width: calc(400px * 5);
+		transition: all .3s ease-in-out;
+	}
+
+		.wrap ul li {
+			width: 400px;
+			height: 200px;
+			float: left;
+		}
+
+		li.red {
+			background-color: red;
+		}
+
+		li.green {
+			background-color: green;
+		}
+
+		li.blue {
+			background-color: blue;
+		}
+
+		li.black {
+			background-color: black;
+		}
+
+		li.lime {
+			background-color: lime;
+		}
